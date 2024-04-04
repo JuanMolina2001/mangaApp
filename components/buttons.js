@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
 import { TouchableOpacity, Text, View } from 'react-native'
-import { styles } from './styles'
 import { useNavigation } from '@react-navigation/native';
+import { StyleSheet } from "react-native"
 export const ChaptersBtn = ({data}) => {
   const navigation = useNavigation();
   return (
@@ -14,3 +13,24 @@ export const ChaptersBtn = ({data}) => {
     </TouchableOpacity>
   )
 }
+ const styles = StyleSheet.create({
+    button: {
+        padding: 10,
+        borderRadius: 10,
+        margin: 10,
+        width: '90%',
+        alignSelf: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        backgroundColor: "#131313B8"
+    },
+    text: {
+        fontSize: 16,
+        color: 'rgba(255, 255, 255, 0.459)',
+
+    },
+    textLeft: {
+        width: 200,
+        color: '#ffffff',
+    },
+})

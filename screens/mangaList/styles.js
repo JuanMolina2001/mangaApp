@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     backfaceVisibility: 'hidden',
   },
   search: {
+    marginBottom: 10,
     height: 50,
     width: '80%',
     marginTop: 10,
